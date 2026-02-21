@@ -1,0 +1,81 @@
+%% main.tex
+%% 华侨大学硕士学位论文 - 主文件
+
+\documentclass{hquThesis}
+
+%% ---- 论文基本信息 ----
+\thesistitle{论文中文标题}
+\thesistitleEN{English Title of the Thesis}
+\thesisauthor{张三}
+\studentid{23000000000}
+\advisor{李四（教授）}
+% \coadvisor{}
+\discipline{计算机科学与技术}
+\direction{人工智能}
+\thesisSchool{计算机科学与技术学院}
+\submitdate{二〇二六年\hspace{0.5em}月\hspace{0.5em}日}
+
+\begin{document}
+
+%% ========== 封面（单面印刷，无页码）==========
+\pagestyle{empty}
+\makecover
+
+%% ========== 答辩委员会决议（从PDF直接引入，奇数页起）==========
+\cleardoublepage
+\includepdf[pages=-, pagecommand={\thispagestyle{empty}}]{figures/committee.pdf}
+
+%% ========== 声明页（从PDF直接引入，奇数页起）==========
+\cleardoublepage
+\includepdf[pages=-, pagecommand={\thispagestyle{empty}}]{figures/declaration.pdf}
+
+%% ========== 前言部分（罗马数字页码）==========
+\cleardoublepage
+\frontmatter
+\pagenumbering{Roman}
+\pagestyle{frontmatter}
+
+%% ---- 中文摘要 ----
+\input{chapters/abstract_cn.tex}
+
+%% ---- 英文摘要 ----
+\input{chapters/abstract_en.tex}
+
+%% ---- 目录 ----
+\tableofcontents
+
+%% ---- 主要符号对照表（如果需要）----
+% \input{chapters/symbols.tex}
+
+%% ========== 正文部分（阿拉伯数字页码）==========
+\mainmatter
+\pagestyle{mainmatter}
+
+%% ---- 第1章 绪论 ----
+\input{chapters/chapter1.tex}
+
+%% ---- 第2章 相关理论基础 ----
+\input{chapters/chapter2.tex}
+
+%% ---- 更多章节 ----
+% \input{chapters/chapter3.tex}
+% \input{chapters/chapter4.tex}
+
+%% ---- 结论 ----
+\input{chapters/conclusion.tex}
+
+%% ========== 参考文献 ==========
+\bibliographystyle{gbt7714-numerical}
+\bibliography{refs}
+
+%% ========== 致谢 ==========
+\input{chapters/acknowledgement.tex}
+
+%% ========== 附录（排版功能示例）==========
+\appendix
+\input{chapters/appendixA.tex}
+
+%% ========== 个人简历 ==========
+\input{chapters/resume.tex}
+
+\end{document}

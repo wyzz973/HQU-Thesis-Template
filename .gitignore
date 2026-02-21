@@ -1,0 +1,41 @@
+# LaTeX 编译产物
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex.gz(busy)
+*.run.xml
+*.bcf
+*.xdv
+*.nav
+*.snm
+*.vrb
+*.bak
+*.spl
+*.idx
+*.ilg
+*.ind
+*.nlo
+*.nls
+*.pdf_tex
+missfont.log
+
+# 编译输出
+main.pdf
+
+# 编辑器临时文件
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
