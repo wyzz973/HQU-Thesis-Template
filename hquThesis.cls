@@ -32,7 +32,7 @@
 \RequirePackage{array}
 \RequirePackage{longtable}
 \RequirePackage{tabularx}
-\RequirePackage[numbers,sort&compress]{natbib}
+\RequirePackage[sort&compress]{gbt7714}
 \RequirePackage{etoolbox}
 \RequirePackage{xparse}
 \RequirePackage{setspace}
