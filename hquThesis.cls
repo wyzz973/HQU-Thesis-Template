@@ -54,6 +54,9 @@
   footskip=1.0cm,
 }
 
+%% ---- 页面底部对齐 ----
+\raggedbottom  % 允许页面底部留白，避免段间距被拉伸
+
 %% ---- 字体设置 ----
 \setmainfont{Times New Roman}
 \setsansfont{Arial}
