@@ -275,7 +275,7 @@
 %% ---- 章节标题格式 ----
 \ctexset{
   chapter = {
-    format = \centering\heiti\zihao{3},
+    format = \centering\heiti\fontsize{16bp}{25.05bp}\selectfont,
     nameformat = {},
     titleformat = {},
     name = {第,章},
@@ -287,19 +287,19 @@
     pagestyle = plain,
   },
   section = {
-    format = \raggedright\heiti\zihao{4},
+    format = \raggedright\heiti\fontsize{14bp}{20bp}\selectfont,
     aftername = \hspace{1em},
     beforeskip = 24bp,
     afterskip = 6bp,
   },
   subsection = {
-    format = \raggedright\heiti\zihao{-4},
+    format = \raggedright\heiti\fontsize{12bp}{20bp}\selectfont,
     aftername = \hspace{1em},
     beforeskip = 12bp,
     afterskip = 6bp,
   },
   subsubsection = {
-    format = \raggedright\heiti\zihao{-4},
+    format = \raggedright\heiti\fontsize{12bp}{20bp}\selectfont,
     aftername = \hspace{1em},
     beforeskip = 12bp,
     afterskip = 6bp,
@@ -316,21 +316,21 @@
 
 % 章标题行：黑体小四号，固定行距20磅，段前6磅，段后0磅，居左
 \titlecontents{chapter}[0em]
-  {\vspace{6bp}\heiti\zihao{-4}}
+  {\vspace{6bp}\heiti\fontsize{12bp}{20bp}\selectfont}
   {\thecontentslabel\hspace{1em}}
   {}
   {\hspace{0.5em}\titlerule*[0.4pc]{.}\contentspage}
 
 % 一级节标题：宋体小四号，固定行距20磅，左缩进1个汉字符
 \titlecontents{section}[1em]
-  {\songti\zihao{-4}}
+  {\songti\fontsize{12bp}{20bp}\selectfont}
   {\thecontentslabel\hspace{1em}}
   {}
   {\hspace{0.5em}\titlerule*[0.4pc]{.}\contentspage}
 
 % 二级节标题：宋体小四号，固定行距20磅，左缩进2个汉字符
 \titlecontents{subsection}[2em]
-  {\songti\zihao{-4}}
+  {\songti\fontsize{12bp}{20bp}\selectfont}
   {\thecontentslabel\hspace{1em}}
   {}
   {\hspace{0.5em}\titlerule*[0.4pc]{.}\contentspage}
@@ -384,9 +384,9 @@
   \phantomsection
   \markboth{摘要}{摘要}
   \vspace*{24bp}
-  {\centering\heiti\zihao{3} 摘\hspace{1em}要\par}
+  {\centering\heiti\fontsize{16bp}{25.05bp}\selectfont 摘\hspace{1em}要\par}
   \vspace{18bp}
-  \songti\zihao{-4}
+  \songti\fontsize{12bp}{20bp}\selectfont
   \setlength{\parindent}{2em}
 }{%
   \clearpage
@@ -402,9 +402,9 @@
   \phantomsection
   \markboth{Abstract}{Abstract}
   \vspace*{24bp}
-  {\centering\sffamily\bfseries\zihao{3} Abstract\par}
+  {\centering\sffamily\bfseries\fontsize{16bp}{25.05bp}\selectfont Abstract\par}
   \vspace{18bp}
-  \zihao{-4}
+  \fontsize{12bp}{20bp}\selectfont
   \setlength{\parindent}{2em}
 }{%
   \clearpage
@@ -451,7 +451,7 @@
   \chapter*{个人简历、在学期间发表的学术论文与研究成果}
   \addcontentsline{toc}{chapter}{个人简历、在学期间发表的学术论文与研究成果}
   \markboth{个人简历、在学期间发表的学术论文与研究成果}{个人简历、在学期间发表的学术论文与研究成果}
-  \songti\zihao{-4}
+  \songti\fontsize{12bp}{20bp}\selectfont
   \setlength{\parindent}{2em}
 }{%
   \clearpage
