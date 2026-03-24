@@ -16,6 +16,7 @@
 \RequirePackage{graphicx}
 \RequirePackage{booktabs}
 \RequirePackage{amsmath, amssymb, amsfonts}
+\RequirePackage{dsfont}        % 双线字体（指示函数 \mathds{1}）
 \RequirePackage{mathtools}
 \RequirePackage{bm}
 \RequirePackage{newtxmath}
@@ -64,10 +65,9 @@
 % 中文字体由 ctex 自动配置
 
 % 封面字体：信息区楷体，题目/作者信息区宋体
-% 自动检测系统可用楷体（Windows: KaiTi / KaiTi_GB2312, macOS: Kaiti SC / STKaiti）
 \newcommand{\hqu@coverkaifont}{\kaishu}
-\IfFontExistsTF{KaiTi_GB2312}{%
-  \setCJKfamilyfont{hqucoverkai}{KaiTi_GB2312}
+\IfFileExists{/Users/sd3/Library/Fonts/KaiTi_GB2312.ttf}{%
+  \setCJKfamilyfont{hqucoverkai}[Path=/Users/sd3/Library/Fonts/]{KaiTi_GB2312.ttf}
   \renewcommand{\hqu@coverkaifont}{\CJKfamily{hqucoverkai}}
 }{%
   \IfFontExistsTF{KaiTi}{%
@@ -102,14 +102,14 @@
 }
 
 %% ---- 行距设置 ----
-\setlength{\baselineskip}{20bp}
+\setlength{\baselineskip}{20pt}
 \renewcommand{\baselinestretch}{1.0}
 
 %% ---- 段落缩进 ----
 \setlength{\parindent}{2em}
 
 %% ---- 页眉页脚通用样式 ----
-\newcommand{\hqu@headertext}{华侨大学博士（或硕士）学位论文}
+\newcommand{\hqu@headertext}{华侨大学硕士学位论文}
 \newcommand{\hqu@headerfont}{\fontsize{10.5bp}{14bp}\selectfont}
 \newcommand{\hqu@pagefont}{\rmfamily\fontsize{10.5bp}{14bp}\selectfont}
 
