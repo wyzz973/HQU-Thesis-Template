@@ -143,6 +143,7 @@
 %% ---- 封面 ----
 \newcommand{\makecover}{%
   \begin{titlepage}
+    \renewcommand{\baselinestretch}{1.0}\selectfont
     \newgeometry{top=3.2cm, bottom=2.6cm, left=2.4cm, right=2.2cm}
     \thispagestyle{empty}
     % ---- 学校代码和学号 ----
@@ -190,6 +191,7 @@
 
     \vspace{0.5cm}
     \restoregeometry
+    \renewcommand{\baselinestretch}{1.3}\selectfont
   \end{titlepage}
   \setcounter{page}{0}
 }
@@ -319,21 +321,21 @@
   {\vspace{6bp}\heiti\fontsize{12bp}{20bp}\selectfont}
   {\thecontentslabel\hspace{1em}}
   {}
-  {\hspace{0.5em}\titlerule*[0.4pc]{.}\contentspage}
+  {\hspace{0.5em}\titlerule*[0.4pc]{.}\contentspage}[\vspace{0bp}]
 
-% 一级节标题：宋体小四号，固定行距20磅，左缩进1个汉字符
+% 一级节标题：宋体小四号，固定行距20磅，段前0磅，段后0磅，左缩进1个汉字符
 \titlecontents{section}[1em]
-  {\songti\fontsize{12bp}{20bp}\selectfont}
+  {\vspace{0bp}\songti\fontsize{12bp}{20bp}\selectfont}
   {\thecontentslabel\hspace{1em}}
   {}
-  {\hspace{0.5em}\titlerule*[0.4pc]{.}\contentspage}
+  {\hspace{0.5em}\titlerule*[0.4pc]{.}\contentspage}[\vspace{0bp}]
 
-% 二级节标题：宋体小四号，固定行距20磅，左缩进2个汉字符
+% 二级节标题：宋体小四号，固定行距20磅，段前0磅，段后0磅，左缩进2个汉字符
 \titlecontents{subsection}[2em]
-  {\songti\fontsize{12bp}{20bp}\selectfont}
+  {\vspace{0bp}\songti\fontsize{12bp}{20bp}\selectfont}
   {\thecontentslabel\hspace{1em}}
   {}
-  {\hspace{0.5em}\titlerule*[0.4pc]{.}\contentspage}
+  {\hspace{0.5em}\titlerule*[0.4pc]{.}\contentspage}[\vspace{0bp}]
 
 %% ---- 图表标题格式 ----
 \DeclareCaptionFont{hqucaptionfont}{\songti\fontsize{11bp}{13bp}\selectfont}
@@ -383,7 +385,7 @@
   \clearpage
   \phantomsection
   \markboth{摘要}{摘要}
-  \vspace*{24bp}
+  \vspace*{-8bp}
   {\centering\heiti\fontsize{16bp}{25.05bp}\selectfont 摘\hspace{1em}要\par}
   \vspace{18bp}
   \songti\fontsize{12bp}{20bp}\selectfont
@@ -401,11 +403,11 @@
   \clearpage
   \phantomsection
   \markboth{Abstract}{Abstract}
-  \vspace*{24bp}
+  \vspace*{-8bp}
   {\centering\sffamily\bfseries\fontsize{16bp}{25.05bp}\selectfont Abstract\par}
   \vspace{18bp}
   \fontsize{12bp}{20bp}\selectfont
-  \setlength{\parindent}{2em}
+  \setlength{\parindent}{1em}  % 英文摘要首行缩进2个英文字符（≈1em）
 }{%
   \clearpage
 }
