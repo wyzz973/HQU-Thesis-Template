@@ -102,8 +102,8 @@
 }
 
 %% ---- 行距设置 ----
-\setlength{\baselineskip}{20pt}
-\renewcommand{\baselinestretch}{1.0}
+%% 小四号(12pt) × 1.3 ≈ 视觉上等效Word"固定行距20磅"
+\renewcommand{\baselinestretch}{1.3}
 
 %% ---- 段落缩进 ----
 \setlength{\parindent}{2em}
